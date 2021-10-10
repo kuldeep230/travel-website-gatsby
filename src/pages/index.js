@@ -10,8 +10,10 @@ import Stats from "../components/Stats"
 import Email from "../components/Email"
 
 class IndexPage extends React.Component {
-  render() {
+  componentDidMount() {
     AOS.init()
+  }
+  render() {
     return (
       <Layout>
         <Seo title="Home" />
