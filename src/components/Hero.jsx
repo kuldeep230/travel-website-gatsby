@@ -18,9 +18,41 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>Unreal Destination</HeroH1>
-          <HeroP>Out of this world</HeroP>
-          <Button primary="true" round="true" big="true" to="/trips">
+          <HeroH1
+            data-aos="fade-up"
+            data-aos-offset="120"
+            data-aos-delay="50"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            Unreal Destination
+          </HeroH1>
+          <HeroP
+            data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-delay="100"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            Out of this world
+          </HeroP>
+          <Button
+            primary="true"
+            round="true"
+            big="true"
+            to="/trips"
+            data-aos="fade-up"
+            data-aos-offset="180"
+            data-aos-delay="150"
+            data-aos-duration="950"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             Trave Now
           </Button>
         </HeroItems>

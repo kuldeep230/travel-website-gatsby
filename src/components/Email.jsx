@@ -7,10 +7,30 @@ const Email = () => {
   return (
     <EmailContainer>
       <EmailContent>
-        <h1>Get Access to Exclusive Offers</h1>
-        <p>Sign up for your newsletter below to get $100 off your first trip</p>
+        <EmailTextWrapper
+          data-aos="fade-down"
+          data-aos-offset="120"
+          data-aos-delay="50"
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <h1>Get Access to Exclusive Offers</h1>
+          <p>
+            Sign up for your newsletter below to get $100 off your first trip
+          </p>
+        </EmailTextWrapper>
         <form action="">
-          <FormWrap>
+          <FormWrap
+            data-aos="fade-up"
+            data-aos-offset="120"
+            data-aos-delay="50"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             <label htmlFor="email">
               <input type="email" placeholder="Enter your email" id="email" />
             </label>
@@ -85,6 +105,7 @@ const EmailContent = styled.div`
     z-index: 10;
   }
 `
+const EmailTextWrapper = styled.div``
 
 const FormWrap = styled.div`
   input {

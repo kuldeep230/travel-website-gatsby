@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 import { ImLocation } from "react-icons/im"
 
@@ -32,7 +32,46 @@ const Trips = ({ heading }) => {
     const tripsArray = []
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
-        <ProductCard key={index}>
+        <ProductCard
+          key={index}
+          data-aos="slide-up"
+          data-aos-offset={
+            index == 0
+              ? "5"
+              : index == 1
+              ? "5"
+              : index == 2
+              ? "5"
+              : index == 3
+              ? "5"
+              : null
+          }
+          data-aos-delay={
+            index == 0
+              ? "0"
+              : index == 1
+              ? "300"
+              : index == 2
+              ? "600"
+              : index == 3
+              ? "900"
+              : null
+          }
+          data-aos-duration={
+            index == 0
+              ? "1000"
+              : index == 1
+              ? "1500"
+              : index == 2
+              ? "2000"
+              : index == 3
+              ? "2500"
+              : null
+          }
+          data-aos-easing="ease-out-back"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        >
           <ProductImage
             image={item.node.img.childImageSharp.gatsbyImageData}
             alt={item.node.alt}

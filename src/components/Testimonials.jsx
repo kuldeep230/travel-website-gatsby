@@ -34,7 +34,15 @@ const Testimonials = () => {
         <TopLine>Testimonials</TopLine>
         <Description>What people are saying</Description>
         <ContentWrapper>
-          <ColumnOne>
+          <ColumnOne
+            data-aos="fade-right"
+            data-aos-offset="120"
+            data-aos-delay="50"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             <Testimonial>
               <IoMdCheckmarkCircleOutline
                 css={`
@@ -70,7 +78,15 @@ const Testimonials = () => {
               </p>
             </Testimonial>
           </ColumnOne>
-          <ColumnTwo>
+          <ColumnTwo
+            data-aos="fade-left"
+            data-aos-offset="120"
+            data-aos-delay="50"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             {data.allFile.edges.map((image, key) => (
               <Image
                 key={key}

@@ -9,7 +9,46 @@ const Stats = () => {
       <Wrapper>
         {StatsData.map((item, index) => {
           return (
-            <StatsBox key={index}>
+            <StatsBox
+              data-aos="slide-right"
+              data-aos-offset={
+                index == 0
+                  ? "5"
+                  : index == 1
+                  ? "5"
+                  : index == 2
+                  ? "5"
+                  : index == 3
+                  ? "5"
+                  : null
+              }
+              data-aos-delay={
+                index == 0
+                  ? "0"
+                  : index == 1
+                  ? "100"
+                  : index == 2
+                  ? "200"
+                  : index == 3
+                  ? "300"
+                  : null
+              }
+              data-aos-duration={
+                index == 0
+                  ? "600"
+                  : index == 1
+                  ? "900"
+                  : index == 2
+                  ? "1200"
+                  : index == 3
+                  ? "1500"
+                  : null
+              }
+              data-aos-easing="ease-out-back"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              key={index}
+            >
               <Icon>{item.icon}</Icon>
               <Title>{item.title}</Title>
               <Description>{item.desc}</Description>
