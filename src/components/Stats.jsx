@@ -12,35 +12,35 @@ const Stats = () => {
             <StatsBox
               data-aos="slide-right"
               data-aos-offset={
-                index == 0
+                index === 0
                   ? "5"
-                  : index == 1
+                  : index === 1
                   ? "5"
-                  : index == 2
+                  : index === 2
                   ? "5"
-                  : index == 3
+                  : index === 3
                   ? "5"
                   : null
               }
               data-aos-delay={
-                index == 0
+                index === 0
                   ? "0"
-                  : index == 1
+                  : index === 1
                   ? "100"
-                  : index == 2
+                  : index === 2
                   ? "200"
-                  : index == 3
+                  : index === 3
                   ? "300"
                   : null
               }
               data-aos-duration={
-                index == 0
+                index === 0
                   ? "600"
-                  : index == 1
+                  : index === 1
                   ? "900"
-                  : index == 2
+                  : index === 2
                   ? "1200"
-                  : index == 3
+                  : index === 3
                   ? "1500"
                   : null
               }
