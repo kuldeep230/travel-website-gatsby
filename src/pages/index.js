@@ -4,11 +4,20 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Hero from "../components/Hero"
+import Trips from "../components/Trips"
+import Testimonials from "../components/Testimonials"
+import Stats from "../components/Stats"
+import Email from "../components/Email"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
+    <Hero />
+    <Trips heading="Our Favorite Destination " />
+    <Testimonials />
+    <Stats />
+    <Email />
   </Layout>
 )
 

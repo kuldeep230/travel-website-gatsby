@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../assets/images/travel-1.jpg",
+    "alt": "The magic Temple",
+    "name": "The magic Temple",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-2.jpg",
+    "alt": "Paris Dreams",
+    "name": "Paris Dreams",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-3.jpg",
+    "alt": "Fantasy Island",
+    "name": "Fantasy Island",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-4.jpg",
+    "alt": "Hiking mania",
+    "name": "Hiking mania",
+    "button": "View Destination"
+  }
+]
